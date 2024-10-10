@@ -1,3 +1,12 @@
-[gd_scene format=3 uid="uid://bvoobe0l584xe"]
+[gd_scene load_steps=3 format=3 uid="uid://bvoobe0l584xe"]
 
-[node name="main" type="Node2D"]
+[ext_resource type="PackedScene" uid="uid://ba8kcduuvvti6" path="res://scenes/tilemap/tilemap.tscn" id="1_1oqko"]
+[ext_resource type="PackedScene" uid="uid://cttgqsp3n6q5f" path="res://scenes/player/player.tscn" id="1_04k5q"]
+
+[node name="level" type="Node2D"]
+
+[node name="tilemap" parent="." instance=ExtResource("1_1oqko")]
+position = Vector2(359, 319)
+
+[node name="player" parent="." instance=ExtResource("1_04k5q")]
+position = Vector2(614, 332)
